@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+#headd {
+    background-image: url(/assets/images/head.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.shrink {
+    position: fixed;
+    background-color: rgb(248, 244, 244);
+    top: 0;
+    width: 100%;
+    opacity: 100%;
+    transition: all 0.5s;
+    box-shadow: 0px 8px 30px #18181844;
+}
+
+#midd {
+    background-image: url(/assets/images/pricing.svg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#auth {
+    background-image: url(/assets/images/signin.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+#auth2 {
+    background-image: url(/assets/images/signup.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+#or-span {
+    background-color: #F2D5FC;
+}
+
+.progress-bar {
+    z-index: -1;
+}
+
+
+.number-box {
+    z-index: 1;
+}
+
+@media only screen and (max-width: 700px) {
+    #headd {
+        background-image: url(/assets/images/head.png);
+        background-size: 120%;
+        background-position-x: 60%;
+        background-position-y: 40%;
+        background-repeat: no-repeat;
+    }
+    #midd {
+        background-image: url(/assets/images/pricing_mobile.svg);
+        background-position-x: 50%;
+        background-repeat: no-repeat;
+    }
+}
