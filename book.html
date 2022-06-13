@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camellia Inflatables</title>
+
+    <!-- Javascript -->
+
+    <script src="/assets/libs/alpine.min.js" defer></script>
+    <script src="/assets/main.js" defer></script>
+    <script src="/assets/libs/swup.min.js" defer></script>
+    <!-- Stylesheets -->
+
+    <link rel="stylesheet" href="/assets/compiled.css">
+    <link rel="stylesheet" href="/assets/main.css">
+</head>
+<body>
+  <main id="swup" class="transition-fade">
+    <!-- Navbar -->
+    <div id="nav-scroll" class="w-full text-darkblack bg-white">
+      <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-2 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+          <div class="p-4 flex flex-row items-center justify-between">
+          <a href="/" class="rounded-lg focus:outline-none focus:shadow-outline">
+              <img class="h-14" src="/assets/images/logo.png" alt="">
+          </a>
+          <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+              <svg fill="currentColor" viewBox="0 0 20 20" class="w-8 mr-1 h-8">
+              <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+          </button>
+          </div>
+          <nav :class="{'flex': open, 'hidden': !open}" class="bg-lightbackground rounded-lg md:bg-transparent flex-col flex-grow pb-4 mb-4 md:mb-0 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+          <a class="md:ml-4 px-4 md:px-2 py-2 mt-2 text-lg font-normal text-primary rounded-lg md:mt-0 hover:text-primary focus:text-primary focus:outline-none focus:shadow-outline" href="/">Home</a>
+          <a class="px-4 md:px-2 py-2 mt-2 text-lg font-normal bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-primary focus:text-primary focus:outline-none focus:shadow-outline" href="#about">About</a>
+          <a class="px-4 md:px-2 py-2 mt-2 text-lg font-normal bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-primary focus:text-primary focus:outline-none focus:shadow-outline" href="#footer">Contact</a>
+          <div @click.away="open = false" class="relative" x-data="{ open: false }">
+            <button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-lg font-normal text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-primary focus:text-primary focus:outline-none focus:shadow-outline">
+              <span>Legal</span>
+              <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd">
+              </path></svg>
+            </button>
+              <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                <div class="px-2 py-2 bg-white rounded-md shadow">
+                  <a class="block px-4 py-2 mt-2 text-sm font-normal bg-transparent rounded-lg md:mt-0 hover:text-primary focus:text-primary focus:outline-none focus:shadow-outline" href="#">Residential Waiver</a>
+                  <a class="block px-4 py-2 mt-2 text-sm font-normal bg-transparent rounded-lg md:mt-0 hover:text-primary focus:text-primary focus:outline-none focus:shadow-outline" href="#">Event Waiver</a>
+                  <a class="block px-4 py-2 mt-2 text-sm font-normal bg-transparent rounded-lg md:mt-0 hover:text-primary focus:text-primary focus:outline-none focus:shadow-outline" href="#">Refund Policy</a>
+                </div>
+              </div>
+          </div>
+          <a href="" class="px-4 md:px-5 pt-2.5 pt-2 mt-2 text-sm font-normal bg-transparent md:border-2 md:border-darkblack md:bg-darkblack hover:text-primary md:hover:bg-white md:hover:text-darkblack hover:shadow-none md:transition md:duration-700  rounded-lg md:mt-0 md:ml-4 text-darkblack md:text-white focus:outline-none focus:shadow-outline" href="/login.html">
+            Book Now
+          </a>
+          </nav>
+      </div>
+      </div>
+
+      <script type="text/javascript" src="https://form.jotform.com/jsform/221636765205052"></script>
+  
+      <footer class="text-gray-700 body-font">
+        <div class="max-w-screen-xl mx-auto container px-5 py-12 flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img src="/assets/images/logo.png" alt="">
+            </a>
+            <p class="mt-2 md:ml-5 text-xs text-darkblack">Copyright ©️ Camellia Inflatables</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-semibold text-darkblack text-xl mb-3">Company</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-800">Home</a>
+                </li>
+                <li>
+                  <a class="text-gray-800">About</a>
+                </li>
+                <li>
+                  <a class="text-gray-800">Rentals</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-semibold text-darkblack text-xl mb-3">Legal</h2>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a href="/" class="text-gray-800"></a>
+                  </li>
+                  <li>
+                    <a class="text-gray-800">Rental Waiver</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-800">Event Waiver</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-800">Refund Policy</a>
+                  </li>
+                </nav>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-semibold text-darkblack text-xl mb-3">Social</h2>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a href="emailto:contact@camelliainflatables.com" class="text-gray-800">Email</a>
+                  </li>
+                  <li>
+                    <a href="https://facebook.com/camelliainflatables" class="text-gray-800">Facebook</a>
+                  </li>
+                  <li>
+                    <a href="https://instagram.com/camelliainflatables" class="text-gray-800">Instagram</a>
+                  </li>
+                </nav>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-semibold text-darkblack text-xl mb-3">Contact</h2>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a class="text-sm text-gray-800">contact@camelliainflatables.com</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-800">+1 (334) 525-JUMP</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-800">Greenville AL, 36037</a>
+                  </li>
+                </nav>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+</body>
+<script>
+    var nav = document.getElementById('nav-scroll');
+
+    window.onscroll = function() {
+        if (window.pageYOffset > 300) {
+            nav.classList.add("shrink");
+        } else {
+            nav.classList.remove("shrink");
+        }
+    }
+</script>
+</html>

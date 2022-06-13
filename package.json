@@ -1,0 +1,25 @@
+{
+  "name": "version_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss assets/main.css -o assets/compiled.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@swup/debug-plugin": "github:swup/debug-plugin",
+    "alpinejs": "^2.7.3",
+    "autoprefixer": "^10.1.0",
+    "chartjs": "^0.3.24",
+    "postcss": "^8.2.0",
+    "swup": "^2.0.13",
+    "tailwindcss": "^2.0.1",
+    "typeface-poppins": "^1.1.13",
+    "typeface-signika": "^1.1.13"
+  },
+  "devDependencies": {
+    "postcss-cli": "^8.3.0"
+  }
+}
