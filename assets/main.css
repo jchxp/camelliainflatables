@@ -60,10 +60,10 @@
 
 @media only screen and (max-width: 700px) {
     #headd {
-        background-image: url(/assets/images/headd.svg);
-        background-size: 180%;
-        background-position-x: 50%;
-        background-position-y: 10%;
+        background-image: url(/assets/images/head.png);
+        background-size: 120%;
+        background-position-x: 60%;
+        background-position-y: 40%;
         background-repeat: no-repeat;
     }
     #midd {
